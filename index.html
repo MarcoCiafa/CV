@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html
+     lang="es-AR"
+     dir="ltr"
+>
+	<head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <!--Page Title-->
+        <title> Curriculum Vitae</title>
+        
+        <!--Bootstrap 5.3.0 (CSS and JS)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="styles-css/general.css">
+<!--		<link rel="stylesheet" href="styles-css/CV.css">-->
+        
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+         
+	</head>
+	
+	<body>
+		
+		<header id="SiteHeader">
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<span class="navbar-brand">
+					<!--TODO: link to home page-->
+					<a href="#"> <img class="img-fluid" src="images/Logo.png" alt="Logo." width="100%"> </a> 
+					</span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					><span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<!--Expanded NavBar Content-->
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="#" class="nav-link active" aria-current="page" >Curriculum Vitae</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link disabled" aria-disabled="true" tabindex="-1">Página 2</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									href="index.html"
+									id="navbarDropdown"
+									class="nav-link dropdown-toggle disabled"
+									role="button" 	
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									aria-disabled="true"
+								>
+								Página 3
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a href="#" class="dropdown-item disabled" aria-disabled="true" tabindex="-1">Página 3.1</a></li>
+									<li><a href="#" class="dropdown-item disabled" aria-disabled="true" tabindex="-1">Página 3.2</a></li>
+									<li><a href="#" class="dropdown-item disabled" aria-disabled="true" tabindex="-1">Página 3.3</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link disabled" aria-disabled="true" tabindex="-1">Página 4</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		</header>
+			
+		<main>
+			<header id="PageHeader" class="container-fluid text-center">
+								
+				<h1 id="PageTitle">Curriculum Vitae</h1>
+				<button type="button" class="btn btn-secondary">Descargar CV</button>
+				
+				<article
+					id="SummaryCard"
+					class="
+						container
+						mx-auto my-2 px-auto py-auto
+						border border-2 border-primary rounded
+					"
+				>
+					<div class="row">
+						<img
+							class="
+								col-4 col-md-4
+								p-0 m-0 my-auto
+								border rounded-circle
+							"
+							src="images/FAL.svg"
+							alt="Foto personal. 'Alf', el extraterrestre, con un Fusil Automático Ligero Belga en la mano."
+							width="100%"
+						>
+						<span id="SummaryCardInfo" class="col-8 col-md-8 px-2 py-1">
+						
+							<div
+								class="
+									px-auto py-auto mb-1
+									text-start
+									fs-5
+								"
+							>
+								Nombre y Apellido
+							</div>
+							<div
+								class="
+									px-auto py-auto mb-3
+									text-start text-wrap
+									fs-6 lh-1
+								"
+							>
+								Breve descripción personal.
+							</div>
+							
+							<div class="row 
+								m-0 px-auto
+								" role="group">
+								<span class="col-2 col-md-1 mx-auto p-0">
+									<img src="images/SN-Icons/FacebookIcon.png" alt="Ícono de Facebook." width="100%">
+								</span>
+								<span class="col-2 col-md-1 mx-auto p-0">
+									<img src="images/SN-Icons/TwitterIcon.png" alt="Ícono de Twitter." width="100%">
+								</span>
+								<span class="col-2 col-md-1 mx-auto p-0">
+									<img src="images/SN-Icons/LinkedInIcon.png" alt="Ícono de LinkedIn." width="100%">
+								</span>
+								<span class="col-2 col-md-1 mx-auto p-0">
+									<img src="images/SN-Icons/InstagramIcon.png" alt="Ícono de Instagram." width="100%">
+								</span>
+								<span class="col-12 col-md-6 mx-auto mt-2 p-0">
+									<button type="button" class="btn btn-success w-100 h-100">Contactar</button>
+								</span>
+							</div>
+						</span>
+					</div>
+				</article>
+
+				
+
+
+				<!--Page Navigation Bar-->
+				<nav class="navbar navbar-light bg-light">
+					<ul class="navbar-nav mx-auto my-1 mb-lg-0">
+						<li class="nav-item m-0 p-0">
+							<a class="nav-link" href="#PersonalInformation">Información Personal</a>
+						</li>
+						<li class="nav-item m-0 p-0">
+							<a class="nav-link" href="#Experience">Experiencia</a>
+						</li>
+						<li class="nav-item m-0 p-0">
+							<a class="nav-link" href="#Skills">Habilidades</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+		
+			<!--Personal Information-->
+			<section
+				id="PersonalInformation"
+				class="
+					mx-1 mx-md-3 mx-lg-5
+					px-1 px-md-3 px-lg-5
+					border border-2 rounded
+				"
+			>
+				<h2 class="my-4 fs-3 text-center">
+					Información Personal
+				</h2>
+				
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<dl class="
+				  			row
+				  			text-wrap
+					  	">
+							<dt class="col-5">Tipo y Número de Documento</dt>
+						 	<dd class="col-7">DNI: 99.999.999</dd>
+
+						  	<dt class="col-5">Fecha y Lugar de Nacimiento</dt>
+						  	<dd class="col-7">
+								<p>29 de Febrero del 1900 (edad:122)</p>
+								<p>Ciudad Autónoma de Buenos Aires, Argentina</p>
+						  	</dd>
+
+						  	<dt class="col-5">Domicilio</dt>
+						  	<dd class="col-7">123 Sesame Street, Manhettan, US</dd>
+
+						  	<dt class="col-5">Teléfono Móvil</dt>
+						  	<dd class="col-7">(+1) 212-736-5000</dd>
+
+						  	<dt class="col-5">Correo Electrónico</dt>
+						  	<dd class="col-7">gordon@melmac.com</dd>
+						</dl>
+					</div>
+					
+					<div class="col-12 col-md-6 col-lg-4">
+						<h3 class="fs-4">
+							Sobre mí
+						</h3>
+						<p class="text-justify">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				
+			</section>
+			
+			<!--Experience-->
+			<section id="Experience">
+				<ul>
+					<li>Experiencia #1</li>
+					<li>Experiencia #2</li>
+					<li>Experiencia #3</li>
+					<li>Experiencia #4</li>
+				</ul>
+			</section>
+			
+			<!--Skills-->
+			<section id="Skills">
+				<ul>
+					<li>Habilidad #1</li>
+					<li>Habilidad #2</li>
+					<li>Habilidad #3</li>
+					<li>Habilidad #4</li>
+				</ul>
+			</section>
+
+			<!--Page Footer-->
+			<footer>
+
+			</footer>
+		
+		</main>
+		
+		<!--Site Footer-->
+		<footer>
+			
+		</footer>
+
+	</body>
+</html>
