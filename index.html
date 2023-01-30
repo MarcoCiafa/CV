@@ -176,8 +176,64 @@
 									<img src="images/InstagramIcon.png" alt="Ícono de Instagram." width="100%">
 								</span>
 								<span class="col-12 col-md-6 mx-auto mb-2 p-0">
-									<button type="button" class="btn btn-success w-100 h-100">Contactar</button>
+									<button
+										type="button" class="btn btn-success w-100 h-100"
+										data-bs-toggle="modal"
+										data-bs-target="#ContactFormModal"
+									>
+										Contactar
+									</button>
+									<div
+										id="ContactFormModal"
+										class="modal fade" 
+										tabindex="-1"
+										aria-labelledby="ContactForm"
+										aria-hidden="true"
+									>
+
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLabel">Formulario de Contacto</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<form id="ContactForm">
+														<div class="mb-3">
+															<label form="ContactForm" for="Name" class="col-form-label">Nombre</label>
+															<input type="text" class="form-control" id="Name" autocomplete="name" required>
+														</div>
+														<div class="mb-3">
+															<label form="ContactForm" for="Organization" class="col-form-label">Organización</label>
+															<input class="form-control" id="Organization">
+														</div>
+														<div class="mb-3">
+															<label form="ContactForm" for="Email" class="col-form-label">Correo Electrónico</label>
+															<input type="text" class="form-control" id="Email" autocomplete="email" required>
+														</div>
+														<div class="mb-3">
+															<label form="ContactForm" for="Subject" class="col-form-label">Asunto</label>
+															<input type="text" class="form-control" id="Subject" required>
+														</div>
+														<div class="mb-3">
+															<label form="ContactForm" for="Message" class="col-form-label">Mensaje</label>
+															<textarea class="form-control" id="Message" required></textarea>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer">
+													<button form="ContactForm" type="submit" class="btn btn-primary">
+														Enviar
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
 								</span>
+								
+
+
+						
 							</div>
 						</span>
 					</div>
@@ -363,6 +419,33 @@
 		<footer>
 			
 		</footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--Scripts-->
+		<script src="scripts-js/SubmitHandler.js"></script>
 
 	</body>
 </html>
