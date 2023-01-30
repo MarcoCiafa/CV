@@ -16,8 +16,9 @@
 
         
         <!--Stylesheets-->
-        <link rel="stylesheet" href="styles-css/general.css">
-<!--		<link rel="stylesheet" href="styles-css/CV.css">-->
+        <link rel="stylesheet" href="styles-css/0-Site.css">
+		<link rel="stylesheet" href="styles-css/1-CV.css">
+		<link rel="stylesheet" href="styles-css/fs-responsive.css">
         
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,35 +87,55 @@
 		</header>
 			
 		<main>
-			<header id="PageHeader" class="container-fluid text-center">
+			<header
+				id="PageHeader"
+				class="
+					container-fluid
+					text-center
+					pt-1 pt-md-3 pt-lg-3
+					px-0
+			">
 								
 				<h1 id="PageTitle">Curriculum Vitae</h1>
-				<button type="button" class="btn btn-secondary">Descargar CV</button>
+				
+				<button type="button" class="btn btn-primary mb-1">Descargar CV</button>
 				
 				<article
 					id="SummaryCard"
 					class="
 						container
-						mx-auto my-2 px-auto py-auto
+						mx-auto my-2
+						px-auto py-auto
 						border border-2 border-primary rounded
 					"
 				>
 					<div class="row">
-						<img
+						<span class="
+							col-4 col-md-4
+							p-2 m-0 my-auto
+						"> 
+							<img
+								id="ProfilePicture"
+								class="
+									border border-3 border-secondary rounded-circle
+								"
+								src="images/FAL.svg"
+								alt="Foto personal. 'Alf', el extraterrestre, con un Fusil Automático Ligero Belga en la mano."
+								width="100%"
+							>
+						</span>
+
+						<span
+							id="SummaryCardInfo"
 							class="
-								col-4 col-md-4
-								p-0 m-0 my-auto
-								border rounded-circle
-							"
-							src="images/FAL.svg"
-							alt="Foto personal. 'Alf', el extraterrestre, con un Fusil Automático Ligero Belga en la mano."
-							width="100%"
-						>
-						<span id="SummaryCardInfo" class="col-8 col-md-8 px-2 py-1">
+								col-8 col-md-8
+								px-2
+								py-1 py-md-3
+						">
 						
 							<div
 								class="
-									px-auto py-auto mb-1
+									px-auto py-auto mb-1 mb-md-2
 									text-start
 									fs-5
 								"
@@ -122,31 +143,39 @@
 								Nombre y Apellido
 							</div>
 							<div
+								id="ShortPersonalDescription"
 								class="
-									px-auto py-auto mb-3
+									px-auto py-auto mb-3 mb-md-4
 									text-start text-wrap
-									fs-6 lh-1
+									fs-6
+									lh-1
 								"
 							>
 								Breve descripción personal.
 							</div>
 							
-							<div class="row 
-								m-0 px-auto
-								" role="group">
-								<span class="col-2 col-md-1 mx-auto p-0">
+							<div
+								class="
+									row 
+									m-0
+									px-auto
+									py-auto
+								" 
+								role="group"
+							>
+								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
 									<img src="images/SN-Icons/FacebookIcon.png" alt="Ícono de Facebook." width="100%">
 								</span>
-								<span class="col-2 col-md-1 mx-auto p-0">
+								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
 									<img src="images/SN-Icons/TwitterIcon.png" alt="Ícono de Twitter." width="100%">
 								</span>
-								<span class="col-2 col-md-1 mx-auto p-0">
+								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
 									<img src="images/SN-Icons/LinkedInIcon.png" alt="Ícono de LinkedIn." width="100%">
 								</span>
-								<span class="col-2 col-md-1 mx-auto p-0">
+								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
 									<img src="images/SN-Icons/InstagramIcon.png" alt="Ícono de Instagram." width="100%">
 								</span>
-								<span class="col-12 col-md-6 mx-auto mt-2 p-0">
+								<span class="col-12 col-md-6 mx-auto mb-2 p-0">
 									<button type="button" class="btn btn-success w-100 h-100">Contactar</button>
 								</span>
 							</div>
@@ -180,15 +209,17 @@
 				class="
 					mx-1 mx-md-3 mx-lg-5
 					px-1 px-md-3 px-lg-5
+					my-1 my-md-3 my-lg-5
+					py-1 py-md-3 py-lg-5
 					border border-2 rounded
 				"
 			>
-				<h2 class="my-4 fs-3 text-center">
+				<h2 class="mb-4 fs-3 text-center">
 					Información Personal
 				</h2>
 				
 				<div class="row">
-					<div class="col-12 col-md-6 col-lg-4">
+					<div class="col-12 col-md-6">
 						<dl class="
 				  			row
 				  			text-wrap
@@ -203,7 +234,7 @@
 						  	</dd>
 
 						  	<dt class="col-5">Domicilio</dt>
-						  	<dd class="col-7">123 Sesame Street, Manhettan, US</dd>
+						  	<dd class="col-7">123 Sesame Street, Manhattan, US</dd>
 
 						  	<dt class="col-5">Teléfono Móvil</dt>
 						  	<dd class="col-7">(+1) 212-736-5000</dd>
@@ -213,11 +244,11 @@
 						</dl>
 					</div>
 					
-					<div class="col-12 col-md-6 col-lg-4">
+					<div class="col-12 col-md-6">
 						<h3 class="fs-4">
 							Sobre mí
 						</h3>
-						<p class="text-justify">
+						<p class="px-1 text-justify">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 					</div>
@@ -225,25 +256,101 @@
 				
 			</section>
 			
+			<div class="row">
+			
+			<div class="
+				col-12 col-lg-6
+				mx-1 mx-md-3 ms-lg-5 me-lg-0
+				my-1 my-md-3 my-lg-0
+			">
+			
 			<!--Experience-->
-			<section id="Experience">
+			<section
+				id="Experience"
+				class="
+					px-1 px-md-3 px-lg-5
+					py-1 py-md-3 py-lg-5
+					border border-2 rounded
+				"
+			>
+				
+				<h2 class="mb-4 fs-3 text-center">
+					Experiencia
+				</h2>
+				
 				<ul>
-					<li>Experiencia #1</li>
-					<li>Experiencia #2</li>
-					<li>Experiencia #3</li>
-					<li>Experiencia #4</li>
+					<li>
+						<p class="Experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p class="ExperienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat eleifend interdum.</p>
+					</li>
+					<li>
+						<p class="Experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p class="ExperienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat eleifend interdum.</p>
+					</li>
+					<li>
+						<p class="Experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p class="ExperienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat eleifend interdum.</p>
+					</li>
+					<li>
+						<p class="Experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p class="ExperienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat eleifend interdum.</p>
+					</li>
 				</ul>
 			</section>
+			</div>
 			
+			<div class="
+				col-12 col-lg-5
+				mx-1 mx-md-3 me-lg-4 ms-lg-0 
+				<!--No entiendo por qué funciona poner me-lg-4 en lugar de me-lg-5-->
+				my-1 my-md-3 my-lg-0
+			">
 			<!--Skills-->
-			<section id="Skills">
+			<section
+				id="Skills"
+				class="
+					px-1 px-md-3 px-lg-5
+					py-1 py-md-3 py-lg-5
+					border border-2 rounded
+				"
+			>
+				
+				<h2 class="mb-4 fs-3 text-center">
+					Habilidades
+				</h2>
+				
+				<h3 class="px-2 fs-5 text-start text-decoration-underline">Hard Skills</h3>
+					<ul>
+						<li>
+							Desarrollo Web Front-End (HTML, CSS, JS) sin igual.
+						</li>
+						<li>Habilidad #2</li>
+						<li>Habilidad #3</li>
+						<li>
+							Maestro del Engaño.
+							<p class="SkillDescription">
+							Probablemente, uno de los mejores jugadores que conoció Town of Salem.
+							</p>
+						</li>
+					</ul>
+				
+				<h3 class="px-2 fs-5 text-start text-decoration-underline">Soft Skills</h3>
 				<ul>
-					<li>Habilidad #1</li>
-					<li>Habilidad #2</li>
+					<li>Modestia.</li>
+					<li>
+						Mucho muy buena comunicación verbal, no verbal y escrita.
+						<p class="SkillDescription">
+						Gran manejo de la comunicación pasivo-agresiva.
+						</p>
+					</li>
 					<li>Habilidad #3</li>
 					<li>Habilidad #4</li>
 				</ul>
+
 			</section>
+			
+			</div>
+			</div>
 
 			<!--Page Footer-->
 			<footer>

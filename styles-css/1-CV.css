@@ -1,3 +1,35 @@
+#ProfilePicture {
+  max-width: 163px;
+  width:100%;
+}
+
+#ShortPersonalDescription {
+	color: gray;
+}
+
+.SocialNetworkIcon {
+  max-width: 40px;
+/*  width:100%;*/
+}
+
+.Experience {
+	margin-bottom: 0px;
+}
+.ExperienceDescription {
+	font-size: .8rem;
+	color: gray;
+	font-style: italic;
+}
+
+.SkillDescription {
+	font-size: .8rem;
+	color: gray;
+}
+
+
+
+
+/*
 #DownloadCV {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -9,22 +41,24 @@
 	
 	text-align: center;
 }
+*/
 
 
-#SummaryCard {
 /*
+#SummaryCard {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-right: 5px;
 	margin-left: 5px;
-*/
 
-/*	border: 3px solid red;*/
+	border: 3px solid red;
 	border-radius: 20px;
 	
-/*	padding: 5px;*/
+	padding: 5px;
 }
+*/
 
+/*
 #ProfilePicture {
     width: 100%;
     background-color: white;
@@ -36,14 +70,19 @@
     
     float: left;
 }
+*/
 
+/*
 #ShortPersonalDescription {
 	font-size: .8rem
 }
+*/
 
+/*
 #SocialNetworksIconsContainer {
 	
 }
+*/
 
 /*
 .SocialNetworkIcon {
