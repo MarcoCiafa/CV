@@ -7,14 +7,18 @@
     	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         
-        <!--Page Title-->
-        <title> Curriculum Vitae</title>
+        <link rel="icon" type="image/x-icon" href="/images/FavIcon.png">
         
+        <!--Open Graph-->
+        <meta property="og:title" content="Ethan Holmes - Curriculum Vitae" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.marcociafa.github.io/GitHub_Pages-CV" />
+<!--		<meta property="og:image" content="#" />-->
+                
         <!--Bootstrap 5.3.0 (CSS and JS)-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-        
         <!--Stylesheets-->
         <link rel="stylesheet" href="styles-css/0-Site.css">
 		<link rel="stylesheet" href="styles-css/1-CV.css">
@@ -25,6 +29,12 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+       
+       	<!--Font Awsome-->
+		<script src="https://kit.fontawesome.com/637e9a37fd.js" crossorigin="anonymous"></script>
+       
+        
+		<title>Ethan Holmes - Curriculum Vitae</title>
          
 	</head>
 	
@@ -35,8 +45,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container-fluid">
 					<span class="navbar-brand">
-					<!--TODO: link to home page-->
-					<a href="#"> <img class="img-fluid" src="images/Logo.png" alt="Logo." width="100%"> </a> 
+					<a href="index.html"> <img class="img-fluid" src="images/Logo.png" alt="Logo." width="100%"> </a> 
 					</span>
 					<button
 						class="navbar-toggler"
@@ -46,14 +55,18 @@
 						aria-controls="navbarSupportedContent"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
-					><span class="navbar-toggler-icon"></span>
+					>
+						<span class="navbar-toggler-icon"></span>
 					</button>
 					
 					<!--Expanded NavBar Content-->
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<ul class="
+							navbar-nav
+							ms-auto mb-2 mb-lg-0
+						">
 							<li class="nav-item">
-								<a href="#" class="nav-link active" aria-current="page" >Curriculum Vitae</a>
+								<a href="index.html" class="nav-link active" aria-current="page" >Curriculum Vitae</a>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link disabled" aria-disabled="true" tabindex="-1">Página 2</a>
@@ -92,19 +105,21 @@
 				class="
 					container-fluid
 					text-center
-					pt-1 pt-md-3 pt-lg-3
+					pt-3 pt-md-3 pt-lg-3
 					px-0
 			">
 								
 				<h1 id="PageTitle">Curriculum Vitae</h1>
 				
-				<button type="button" class="btn btn-primary mb-1">Descargar CV</button>
+				<a href="res/DummyPDF.pdf" download="ApellidoNombre" >
+					<button type="button" class="btn btn-outline-info mb-1"> CV <i class="fa-solid fa-file-pdf"></i></button>
+				</a>
 				
 				<article
 					id="SummaryCard"
 					class="
 						container
-						mx-auto my-2
+						mx-auto my-4
 						px-auto py-auto
 						border border-2 border-primary rounded
 					"
@@ -119,8 +134,8 @@
 								class="
 									border border-3 border-secondary rounded-circle
 								"
-								src="images/FAL.svg"
-								alt="Foto personal. 'Alf', el extraterrestre, con un Fusil Automático Ligero Belga en la mano."
+								src="https://randomuser.me/api/portraits/men/28.jpg"
+								alt="Foto de perfil."
 								width="100%"
 							>
 						</span>
@@ -140,7 +155,7 @@
 									fs-5
 								"
 							>
-								Nombre y Apellido
+								Ethan Holmes
 							</div>
 							<div
 								id="ShortPersonalDescription"
@@ -151,7 +166,7 @@
 									lh-1
 								"
 							>
-								Breve descripción personal.
+								¡Hola! Soy una persona generada aleatoriamente por la API <a href="https://randomuser.me/">Random User Generator</a>.
 							</div>
 							
 							<div
@@ -164,16 +179,20 @@
 								role="group"
 							>
 								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
-									<img src="images/FacebookIcon.png" alt="Ícono de Facebook." width="100%">
+									<a href="https://github.com/RandomAPI/Randomuser.me-Node">
+									<img src="images/GitHubIcon.png" alt="Ícono de GitHub." width="100%">
+									</a>
 								</span>
 								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
+									<a href="https://twitter.com/randomapi">
 									<img src="images/TwitterIcon.png" alt="Ícono de Twitter." width="100%">
+									</a>
 								</span>
 								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
 									<img src="images/LinkedInIcon.png" alt="Ícono de LinkedIn." width="100%">
 								</span>
 								<span class="col-2 col-md-1 mx-auto mb-2 p-0 SocialNetworkIcon">
-									<img src="images/InstagramIcon.png" alt="Ícono de Instagram." width="100%">
+									<img src="images/GoogleScholarIcon.png" alt="Ícono de Google Académico." width="100%">
 								</span>
 								<span class="col-12 col-md-6 mx-auto mb-2 p-0">
 									<button
@@ -194,7 +213,7 @@
 										<div class="modal-dialog">
 											<div class="modal-content">
 												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLabel">Formulario de Contacto</h5>
+													<h5 class="modal-title">Formulario de Contacto</h5>
 													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 												</div>
 												<div class="modal-body">
@@ -222,7 +241,10 @@
 													</form>
 												</div>
 												<div class="modal-footer">
-													<button form="ContactForm" type="submit" class="btn btn-primary">
+													<!--data-bs-dismiss="modal"    data-bs-target="#ContactFormSuccessModal"-->
+													<button form="ContactForm" type="submit" class="btn btn-primary"
+													data-bs-dismiss="modal"
+													>
 														Enviar
 													</button>
 												</div>
@@ -270,7 +292,8 @@
 					border border-2 rounded
 				"
 			>
-				<h2 class="mb-4 fs-3 text-center">
+				<h2 class="mt-2 mb-4 fs-3 text-center">
+					<i class="fa-solid fa-user"></i>
 					Información Personal
 				</h2>
 				
@@ -280,23 +303,26 @@
 				  			row
 				  			text-wrap
 					  	">
-							<dt class="col-5">Tipo y Número de Documento</dt>
-						 	<dd class="col-7">DNI: 99.999.999</dd>
+							<dt class="col-5 ps-3">Tipo y Número de Documento</dt>
+						 	<dd class="col-6"><i class="fa-solid fa-id-card"></i>DNI: 99.999.999</dd>
 
-						  	<dt class="col-5">Fecha y Lugar de Nacimiento</dt>
-						  	<dd class="col-7">
-								<p>29 de Febrero del 1900 (edad:122)</p>
-								<p>Ciudad Autónoma de Buenos Aires, Argentina</p>
+						  	<dt class="col-5 ps-3">Fecha y Lugar de Nacimiento</dt>
+						  	<dd class="col-6">
+								<p><i class="fa-solid fa-cake-candles"></i>6 de Enero de 1966</p>
+								<p><i class="fa-solid fa-map-pin"></i>Ciudad Autónoma de Buenos Aires, Argentina</p>
 						  	</dd>
 
-						  	<dt class="col-5">Domicilio</dt>
-						  	<dd class="col-7">123 Sesame Street, Manhattan, US</dd>
+						  	<dt class="col-5 ps-3">Domicilio</dt>
+						  	<dd class="col-6"><i class="fa-solid fa-home"></i>4589 Royal Ln, San Carlos, CA, US</dd>
 
-						  	<dt class="col-5">Teléfono Móvil</dt>
-						  	<dd class="col-7">(+1) 212-736-5000</dd>
+						  	<dt class="col-5 ps-3">Teléfono Móvil</dt>
+						  	<dd class="col-6"><i class="fa-solid fa-phone"></i>(+1) (209) 316-1495</dd>
 
-						  	<dt class="col-5">Correo Electrónico</dt>
-						  	<dd class="col-7">gordon@melmac.com</dd>
+						  	<dt class="col-5 ps-3">Correo Electrónico</dt>
+						  	<dd class="col-6 pe-5 me-5 me-auto overflow-auto" id="ContactEmail">
+								<i class="fa-solid fa-inbox"></i>
+						  		<a href="mailto:ethan.holmes@example.com"></a>
+						  	</dd>
 						</dl>
 					</div>
 					
@@ -312,6 +338,7 @@
 				
 			</section>
 			
+			
 			<div class="row">
 			
 			<div class="
@@ -319,7 +346,6 @@
 				mx-1 mx-md-3 ms-lg-5 me-lg-0
 				my-1 my-md-3 my-lg-0
 			">
-			
 			<!--Experience-->
 			<section
 				id="Experience"
@@ -331,6 +357,7 @@
 			>
 				
 				<h2 class="mb-4 fs-3 text-center">
+					<i class="fa-solid fa-briefcase"></i>
 					Experiencia
 				</h2>
 				
@@ -372,40 +399,68 @@
 			>
 				
 				<h2 class="mb-4 fs-3 text-center">
+					<i class="fa-solid fa-hammer"></i>
 					Habilidades
 				</h2>
 				
 				<h3 class="px-2 fs-5 text-start text-decoration-underline">Hard Skills</h3>
-					<ul>
-						<li>
-							Desarrollo Web Front-End (HTML, CSS, JS) sin igual.
-						</li>
-						<li>Habilidad #2</li>
-						<li>Habilidad #3</li>
-						<li>
-							Maestro del Engaño.
-							<p class="SkillDescription">
-							Probablemente, uno de los mejores jugadores que conoció Town of Salem.
-							</p>
-						</li>
-					</ul>
+				<ul>
+					<li>
+						Sed vel dolor velit. Curabitur.
+						<p class="SkillDescription">
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
+						</p>
+					</li>
+					<li>
+						Sed vel dolor velit. Curabitur.
+						<p class="SkillDescription">
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
+						</p>
+					</li>
+					<li>
+						Sed vel dolor velit. Curabitur.
+						<p class="SkillDescription">
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
+						</p>
+					</li>
+					<li>
+						Sed vel dolor velit. Curabitur.
+						<p class="SkillDescription">
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
+						</p>
+					</li>
+				</ul>
 				
 				<h3 class="px-2 fs-5 text-start text-decoration-underline">Soft Skills</h3>
 				<ul>
-					<li>Modestia.</li>
 					<li>
-						Mucho muy buena comunicación verbal, no verbal y escrita.
+						Sed vel dolor velit. Curabitur.
 						<p class="SkillDescription">
-						Gran manejo de la comunicación pasivo-agresiva.
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
 						</p>
 					</li>
-					<li>Habilidad #3</li>
-					<li>Habilidad #4</li>
+					<li>
+						Sed vel dolor velit. Curabitur.
+						<p class="SkillDescription">
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
+						</p>
+					<li>
+						Sed vel dolor velit. Curabitur.
+						<p class="SkillDescription">
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
+						</p>
+					</li>
+					<li>
+						Sed vel dolor velit. Curabitur.
+						<p class="SkillDescription">
+						Sed et felis convallis, faucibus ipsum et, euismod magna.
+						</p>
+					</li>
 				</ul>
 
 			</section>
-			
 			</div>
+			
 			</div>
 
 			<!--Page Footer-->
@@ -420,25 +475,7 @@
 			
 		</footer>
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 		
 		
